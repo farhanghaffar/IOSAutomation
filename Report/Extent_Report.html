@@ -1,0 +1,3390 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>/Users/CodeAutomation/Documents/Vested-IOS-Automation/reports/Extent_Report.html</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>/Users/CodeAutomation/Documents/Vested-IOS-Automation/reports/Extent_Report.html</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Feb 11, 2022 04:51:30 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Login_AxisUser</span>
+						<span class='test-time'>Feb 11, 2022 04:51:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 11, 2022 04:51:30 PM</span>
+	<span class='label end-time'>Feb 11, 2022 04:54:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 19s+637ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:51:30 PM</td>
+				<td class='step-details'>
+						<a target="_blank" href="https://vestedfinance.atlassian.net/browse/QAA-15"><b>QAA-15 : iOS - Verify that a user is successfully able to login into the B2B platform</b></a>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:51:30 PM</td>
+				<td class='step-details'>
+						<b>Verify that a user is successfully able to login into the B2B platform</b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:53:46 PM</td>
+				<td class='step-details'>
+						Step 1 : Verify Login button displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:53:48 PM</td>
+				<td class='step-details'>
+						--Verified Login button displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:53:48 PM</td>
+				<td class='step-details'>
+						Step 2 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:54:01 PM</td>
+				<td class='step-details'>
+						Step 3 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:54:07 PM</td>
+				<td class='step-details'>
+						Step 4 : Enter email address : vested.automation+71@gmail.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:54:19 PM</td>
+				<td class='step-details'>
+						Step 5 : Enter Password : #TestUser12
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:54:25 PM</td>
+				<td class='step-details'>
+						Step 6 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:54:39 PM</td>
+				<td class='step-details'>
+						Step 7 : Verify home page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:54:44 PM</td>
+				<td class='step-details'>
+						--Verified home page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:54:50 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Screenshot of Test Pass</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_16_54_50_PKT_2022.jpg' src='Fri_Feb_11_16_54_50_PKT_2022.jpg' data-src='Fri_Feb_11_16_54_50_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:54:50 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>TEST CASE:- LOGIN_AXISUSER PASSED</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Login_B2B_Email</span>
+						<span class='test-time'>Feb 11, 2022 04:54:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 11, 2022 04:54:51 PM</span>
+	<span class='label end-time'>Feb 11, 2022 05:39:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 44m 29s+685ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:54:51 PM</td>
+				<td class='step-details'>
+						<a target="_blank" href="https://vestedfinance.atlassian.net/browse/QAA-5"><b>QAA-5 : Verify that a user is successfully able to login into the B2B platform</b></a>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:54:51 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'ASL' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:57:14 PM</td>
+				<td class='step-details'>
+						Step 1 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:57:14 PM</td>
+				<td class='step-details'>
+						Step 2 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:57:17 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:57:17 PM</td>
+				<td class='step-details'>
+						Step 3 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:57:25 PM</td>
+				<td class='step-details'>
+						Step 4 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:57:31 PM</td>
+				<td class='step-details'>
+						Step 5 : Enter email address : vested.automation+71@gmail.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:57:43 PM</td>
+				<td class='step-details'>
+						Step 6 : Enter Password : #TestUser12
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:57:48 PM</td>
+				<td class='step-details'>
+						Step 7 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:57:56 PM</td>
+				<td class='step-details'>
+						Step 8 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:58:40 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:58:47 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_16_58_47_PKT_2022.jpg' src='Fri_Feb_11_16_58_47_PKT_2022.jpg' data-src='Fri_Feb_11_16_58_47_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:58:49 PM</td>
+				<td class='step-details'>
+						Step 9 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:58:52 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Bajajfinserv' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:59:18 PM</td>
+				<td class='step-details'>
+						Step 10 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:59:18 PM</td>
+				<td class='step-details'>
+						Step 11 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>4:59:20 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:59:20 PM</td>
+				<td class='step-details'>
+						Step 12 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:59:28 PM</td>
+				<td class='step-details'>
+						Step 13 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:59:39 PM</td>
+				<td class='step-details'>
+						Step 14 : Enter email address : rahuld+test+4353@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:59:52 PM</td>
+				<td class='step-details'>
+						Step 15 : Enter Password : iTestUser1!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>4:59:57 PM</td>
+				<td class='step-details'>
+						Step 16 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:00:05 PM</td>
+				<td class='step-details'>
+						Step 17 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:00:47 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:00:55 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_00_55_PKT_2022.jpg' src='Fri_Feb_11_17_00_55_PKT_2022.jpg' data-src='Fri_Feb_11_17_00_55_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:00:57 PM</td>
+				<td class='step-details'>
+						Step 18 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:01:01 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Etica' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:01:26 PM</td>
+				<td class='step-details'>
+						Step 19 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:01:26 PM</td>
+				<td class='step-details'>
+						Step 20 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:01:29 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:01:29 PM</td>
+				<td class='step-details'>
+						Step 21 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:01:52 PM</td>
+				<td class='step-details'>
+						Step 22 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:01:57 PM</td>
+				<td class='step-details'>
+						Step 23 : Enter email address : satyajit+staging+etica@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:02:13 PM</td>
+				<td class='step-details'>
+						Step 24 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:02:19 PM</td>
+				<td class='step-details'>
+						Step 25 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:02:30 PM</td>
+				<td class='step-details'>
+						Step 26 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:03:13 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:03:18 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_03_18_PKT_2022.jpg' src='Fri_Feb_11_17_03_18_PKT_2022.jpg' data-src='Fri_Feb_11_17_03_18_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:03:20 PM</td>
+				<td class='step-details'>
+						Step 27 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:03:23 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Trustline' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:03:50 PM</td>
+				<td class='step-details'>
+						Step 28 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:03:50 PM</td>
+				<td class='step-details'>
+						Step 29 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:03:53 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:03:53 PM</td>
+				<td class='step-details'>
+						Step 30 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:04:14 PM</td>
+				<td class='step-details'>
+						Step 31 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:04:20 PM</td>
+				<td class='step-details'>
+						Step 32 : Enter email address : satyajit+stag+trustline@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:04:34 PM</td>
+				<td class='step-details'>
+						Step 33 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:04:39 PM</td>
+				<td class='step-details'>
+						Step 34 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:04:47 PM</td>
+				<td class='step-details'>
+						Step 35 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:05:27 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:05:32 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_05_32_PKT_2022.jpg' src='Fri_Feb_11_17_05_32_PKT_2022.jpg' data-src='Fri_Feb_11_17_05_32_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:05:34 PM</td>
+				<td class='step-details'>
+						Step 36 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:05:37 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Winrich' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:06:02 PM</td>
+				<td class='step-details'>
+						Step 37 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:06:02 PM</td>
+				<td class='step-details'>
+						Step 38 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:06:04 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:06:04 PM</td>
+				<td class='step-details'>
+						Step 39 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:06:11 PM</td>
+				<td class='step-details'>
+						Step 40 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:06:31 PM</td>
+				<td class='step-details'>
+						Step 41 : Enter email address : satyajit+stag+winrich@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:06:57 PM</td>
+				<td class='step-details'>
+						Step 42 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:07:03 PM</td>
+				<td class='step-details'>
+						Step 43 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:07:12 PM</td>
+				<td class='step-details'>
+						Step 44 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:07:54 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:08:00 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_08_00_PKT_2022.jpg' src='Fri_Feb_11_17_08_00_PKT_2022.jpg' data-src='Fri_Feb_11_17_08_00_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:08:02 PM</td>
+				<td class='step-details'>
+						Step 45 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:08:04 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Ocean' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:08:29 PM</td>
+				<td class='step-details'>
+						Step 46 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:08:29 PM</td>
+				<td class='step-details'>
+						Step 47 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:08:31 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:08:31 PM</td>
+				<td class='step-details'>
+						Step 48 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:08:42 PM</td>
+				<td class='step-details'>
+						Step 49 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:08:48 PM</td>
+				<td class='step-details'>
+						Step 50 : Enter email address : satyajit+stag+ocean@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:09:01 PM</td>
+				<td class='step-details'>
+						Step 51 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:09:07 PM</td>
+				<td class='step-details'>
+						Step 52 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:09:16 PM</td>
+				<td class='step-details'>
+						Step 53 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:10:14 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:10:25 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_10_25_PKT_2022.jpg' src='Fri_Feb_11_17_10_25_PKT_2022.jpg' data-src='Fri_Feb_11_17_10_25_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:10:27 PM</td>
+				<td class='step-details'>
+						Step 54 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:10:29 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Water' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:10:55 PM</td>
+				<td class='step-details'>
+						Step 55 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:10:55 PM</td>
+				<td class='step-details'>
+						Step 56 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:10:57 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:10:57 PM</td>
+				<td class='step-details'>
+						Step 57 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:11:07 PM</td>
+				<td class='step-details'>
+						Step 58 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:11:12 PM</td>
+				<td class='step-details'>
+						Step 59 : Enter email address : satyajit+stag+water@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:11:26 PM</td>
+				<td class='step-details'>
+						Step 60 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:11:32 PM</td>
+				<td class='step-details'>
+						Step 61 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:11:41 PM</td>
+				<td class='step-details'>
+						Step 62 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:12:25 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:12:32 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_12_32_PKT_2022.jpg' src='Fri_Feb_11_17_12_32_PKT_2022.jpg' data-src='Fri_Feb_11_17_12_32_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:12:34 PM</td>
+				<td class='step-details'>
+						Step 63 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:12:37 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Dilzer' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:08 PM</td>
+				<td class='step-details'>
+						Step 64 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:08 PM</td>
+				<td class='step-details'>
+						Step 65 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:13:13 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:13 PM</td>
+				<td class='step-details'>
+						Step 66 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:23 PM</td>
+				<td class='step-details'>
+						Step 67 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:29 PM</td>
+				<td class='step-details'>
+						Step 68 : Enter email address : satyajit+stag+dilzer@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:45 PM</td>
+				<td class='step-details'>
+						Step 69 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:50 PM</td>
+				<td class='step-details'>
+						Step 70 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:13:57 PM</td>
+				<td class='step-details'>
+						Step 71 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:36 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:14:38 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_14_38_PKT_2022.jpg' src='Fri_Feb_11_17_14_38_PKT_2022.jpg' data-src='Fri_Feb_11_17_14_38_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:40 PM</td>
+				<td class='step-details'>
+						Step 72 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:14:43 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Ashika' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:15:09 PM</td>
+				<td class='step-details'>
+						Step 73 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:15:09 PM</td>
+				<td class='step-details'>
+						Step 74 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:15:18 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:15:18 PM</td>
+				<td class='step-details'>
+						Step 75 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:15:27 PM</td>
+				<td class='step-details'>
+						Step 76 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:15:31 PM</td>
+				<td class='step-details'>
+						Step 77 : Enter email address : satyajit+stag+ashika@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:15:43 PM</td>
+				<td class='step-details'>
+						Step 78 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:15:50 PM</td>
+				<td class='step-details'>
+						Step 79 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:15:57 PM</td>
+				<td class='step-details'>
+						Step 80 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:16:44 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:16:50 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_16_50_PKT_2022.jpg' src='Fri_Feb_11_17_16_50_PKT_2022.jpg' data-src='Fri_Feb_11_17_16_50_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:16:52 PM</td>
+				<td class='step-details'>
+						Step 81 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:16:55 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Ashutoshfin' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:17:19 PM</td>
+				<td class='step-details'>
+						Step 82 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:17:19 PM</td>
+				<td class='step-details'>
+						Step 83 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:17:21 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:17:21 PM</td>
+				<td class='step-details'>
+						Step 84 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:17:29 PM</td>
+				<td class='step-details'>
+						Step 85 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:17:34 PM</td>
+				<td class='step-details'>
+						Step 86 : Enter email address : satyajit+stag+ashutosh@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:17:47 PM</td>
+				<td class='step-details'>
+						Step 87 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:17:53 PM</td>
+				<td class='step-details'>
+						Step 88 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:18:17 PM</td>
+				<td class='step-details'>
+						Step 89 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:18:56 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:19:02 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_19_02_PKT_2022.jpg' src='Fri_Feb_11_17_19_02_PKT_2022.jpg' data-src='Fri_Feb_11_17_19_02_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:19:04 PM</td>
+				<td class='step-details'>
+						Step 90 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:19:06 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'CapitalCorp' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:19:30 PM</td>
+				<td class='step-details'>
+						Step 91 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:19:30 PM</td>
+				<td class='step-details'>
+						Step 92 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:19:32 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:19:32 PM</td>
+				<td class='step-details'>
+						Step 93 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:19:39 PM</td>
+				<td class='step-details'>
+						Step 94 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:19:47 PM</td>
+				<td class='step-details'>
+						Step 95 : Enter email address : satyajit+stag+capitalcorp@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:20:00 PM</td>
+				<td class='step-details'>
+						Step 96 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:20:05 PM</td>
+				<td class='step-details'>
+						Step 97 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:20:13 PM</td>
+				<td class='step-details'>
+						Step 98 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:20:52 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:20:58 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_20_58_PKT_2022.jpg' src='Fri_Feb_11_17_20_58_PKT_2022.jpg' data-src='Fri_Feb_11_17_20_58_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:21:00 PM</td>
+				<td class='step-details'>
+						Step 99 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:21:02 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Mehta Group' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:21:28 PM</td>
+				<td class='step-details'>
+						Step 100 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:21:28 PM</td>
+				<td class='step-details'>
+						Step 101 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:21:30 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:21:30 PM</td>
+				<td class='step-details'>
+						Step 102 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:21:39 PM</td>
+				<td class='step-details'>
+						Step 103 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:21:44 PM</td>
+				<td class='step-details'>
+						Step 104 : Enter email address : satyajit+stag+mehta@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:21:57 PM</td>
+				<td class='step-details'>
+						Step 105 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:22:02 PM</td>
+				<td class='step-details'>
+						Step 106 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:22:10 PM</td>
+				<td class='step-details'>
+						Step 107 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:22:50 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:22:53 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_22_53_PKT_2022.jpg' src='Fri_Feb_11_17_22_53_PKT_2022.jpg' data-src='Fri_Feb_11_17_22_53_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:22:55 PM</td>
+				<td class='step-details'>
+						Step 108 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:22:58 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Harvest' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:23:21 PM</td>
+				<td class='step-details'>
+						Step 109 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:23:21 PM</td>
+				<td class='step-details'>
+						Step 110 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:23:24 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:23:24 PM</td>
+				<td class='step-details'>
+						Step 111 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:23:38 PM</td>
+				<td class='step-details'>
+						Step 112 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:23:42 PM</td>
+				<td class='step-details'>
+						Step 113 : Enter email address : satyajit+stag+harvest@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:23:54 PM</td>
+				<td class='step-details'>
+						Step 114 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:24:00 PM</td>
+				<td class='step-details'>
+						Step 115 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:24:24 PM</td>
+				<td class='step-details'>
+						Step 116 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:25:04 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:25:09 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_25_09_PKT_2022.jpg' src='Fri_Feb_11_17_25_09_PKT_2022.jpg' data-src='Fri_Feb_11_17_25_09_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:25:11 PM</td>
+				<td class='step-details'>
+						Step 117 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:25:13 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Finnovators' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:25:54 PM</td>
+				<td class='step-details'>
+						Step 118 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:25:54 PM</td>
+				<td class='step-details'>
+						Step 119 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:25:57 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:25:57 PM</td>
+				<td class='step-details'>
+						Step 120 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:26:04 PM</td>
+				<td class='step-details'>
+						Step 121 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:26:13 PM</td>
+				<td class='step-details'>
+						Step 122 : Enter email address : satyajit+stag+finnovators@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:26:25 PM</td>
+				<td class='step-details'>
+						Step 123 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:26:30 PM</td>
+				<td class='step-details'>
+						Step 124 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:26:44 PM</td>
+				<td class='step-details'>
+						Step 125 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:27:30 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:27:35 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_27_35_PKT_2022.jpg' src='Fri_Feb_11_17_27_35_PKT_2022.jpg' data-src='Fri_Feb_11_17_27_35_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:27:37 PM</td>
+				<td class='step-details'>
+						Step 126 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:27:39 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'WealthOK' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:03 PM</td>
+				<td class='step-details'>
+						Step 127 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:03 PM</td>
+				<td class='step-details'>
+						Step 128 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:28:05 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:05 PM</td>
+				<td class='step-details'>
+						Step 129 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:12 PM</td>
+				<td class='step-details'>
+						Step 130 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:17 PM</td>
+				<td class='step-details'>
+						Step 131 : Enter email address : satyajit+stag+wealthok1@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:31 PM</td>
+				<td class='step-details'>
+						Step 132 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:39 PM</td>
+				<td class='step-details'>
+						Step 133 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:28:48 PM</td>
+				<td class='step-details'>
+						Step 134 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:29:31 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:29:35 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_29_35_PKT_2022.jpg' src='Fri_Feb_11_17_29_35_PKT_2022.jpg' data-src='Fri_Feb_11_17_29_35_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:37 PM</td>
+				<td class='step-details'>
+						Step 135 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:29:39 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Wealthfirst' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:30:04 PM</td>
+				<td class='step-details'>
+						Step 136 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:30:04 PM</td>
+				<td class='step-details'>
+						Step 137 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:30:06 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:30:06 PM</td>
+				<td class='step-details'>
+						Step 138 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:30:19 PM</td>
+				<td class='step-details'>
+						Step 139 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:30:24 PM</td>
+				<td class='step-details'>
+						Step 140 : Enter email address : satyajit+stag+wealthfirst@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:30:37 PM</td>
+				<td class='step-details'>
+						Step 141 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:30:45 PM</td>
+				<td class='step-details'>
+						Step 142 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:30:53 PM</td>
+				<td class='step-details'>
+						Step 143 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:31:33 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:31:36 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_31_36_PKT_2022.jpg' src='Fri_Feb_11_17_31_36_PKT_2022.jpg' data-src='Fri_Feb_11_17_31_36_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:31:38 PM</td>
+				<td class='step-details'>
+						Step 144 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:31:41 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Kesef' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:32:04 PM</td>
+				<td class='step-details'>
+						Step 145 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:32:04 PM</td>
+				<td class='step-details'>
+						Step 146 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:32:06 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:32:06 PM</td>
+				<td class='step-details'>
+						Step 147 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:32:14 PM</td>
+				<td class='step-details'>
+						Step 148 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:32:18 PM</td>
+				<td class='step-details'>
+						Step 149 : Enter email address : satyajit+stag+kesef@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:32:31 PM</td>
+				<td class='step-details'>
+						Step 150 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:32:39 PM</td>
+				<td class='step-details'>
+						Step 151 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:32:49 PM</td>
+				<td class='step-details'>
+						Step 152 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:33:32 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:33:35 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_33_35_PKT_2022.jpg' src='Fri_Feb_11_17_33_35_PKT_2022.jpg' data-src='Fri_Feb_11_17_33_35_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:33:37 PM</td>
+				<td class='step-details'>
+						Step 153 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:33:39 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Epitome' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:34:03 PM</td>
+				<td class='step-details'>
+						Step 154 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:34:03 PM</td>
+				<td class='step-details'>
+						Step 155 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:34:05 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:34:05 PM</td>
+				<td class='step-details'>
+						Step 156 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:34:17 PM</td>
+				<td class='step-details'>
+						Step 157 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:34:21 PM</td>
+				<td class='step-details'>
+						Step 158 : Enter email address : satyajit+stag+epitome@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:34:34 PM</td>
+				<td class='step-details'>
+						Step 159 : Enter Password : Vested123!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:34:40 PM</td>
+				<td class='step-details'>
+						Step 160 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:34:46 PM</td>
+				<td class='step-details'>
+						Step 161 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:35:26 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:35:28 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_35_28_PKT_2022.jpg' src='Fri_Feb_11_17_35_28_PKT_2022.jpg' data-src='Fri_Feb_11_17_35_28_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:35:30 PM</td>
+				<td class='step-details'>
+						Step 162 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:35:32 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Centrum' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:35:56 PM</td>
+				<td class='step-details'>
+						Step 163 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:35:56 PM</td>
+				<td class='step-details'>
+						Step 164 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:35:59 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:35:59 PM</td>
+				<td class='step-details'>
+						Step 165 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:36:08 PM</td>
+				<td class='step-details'>
+						Step 166 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:36:13 PM</td>
+				<td class='step-details'>
+						Step 167 : Enter email address : rahuld+test+centrum@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:36:26 PM</td>
+				<td class='step-details'>
+						Step 168 : Enter Password : iTestUser1!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:36:32 PM</td>
+				<td class='step-details'>
+						Step 169 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:36:40 PM</td>
+				<td class='step-details'>
+						Step 170 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:37:20 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:37:27 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Login Success screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_37_27_PKT_2022.jpg' src='Fri_Feb_11_17_37_27_PKT_2022.jpg' data-src='Fri_Feb_11_17_37_27_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:37:29 PM</td>
+				<td class='step-details'>
+						Step 171 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:37:31 PM</td>
+				<td class='step-details'>
+						<b>Verify authentication for User : 'Wright' </b>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:37:55 PM</td>
+				<td class='step-details'>
+						Step 172 : Launch application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:37:55 PM</td>
+				<td class='step-details'>
+						Step 173 : Verify Login button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:37:58 PM</td>
+				<td class='step-details'>
+						--Verified Login button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:37:58 PM</td>
+				<td class='step-details'>
+						Step 174 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:38:05 PM</td>
+				<td class='step-details'>
+						Step 175 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:38:10 PM</td>
+				<td class='step-details'>
+						Step 176 : Enter email address : apurva.jain+wr+002@vestedfinance.co
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:38:23 PM</td>
+				<td class='step-details'>
+						Step 177 : Enter Password : iTestUser1!
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:38:29 PM</td>
+				<td class='step-details'>
+						Step 178 : Click on 'Login' button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:38:35 PM</td>
+				<td class='step-details'>
+						Step 179 : Verify User is logged in and no error message showing.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:39:15 PM</td>
+				<td class='step-details'>
+						--Verified User is logged in and no error message showing
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:39:20 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Screenshot of Test Pass</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_39_20_PKT_2022.jpg' src='Fri_Feb_11_17_39_20_PKT_2022.jpg' data-src='Fri_Feb_11_17_39_20_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:39:20 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>TEST CASE:- LOGIN_B2B_EMAIL PASSED</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Login_B2C_Email</span>
+						<span class='test-time'>Feb 11, 2022 05:39:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 11, 2022 05:39:21 PM</span>
+	<span class='label end-time'>Feb 11, 2022 05:43:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 46s+942ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:39:21 PM</td>
+				<td class='step-details'>
+						<a target="_blank" href="https://vestedfinance.atlassian.net/browse/QAA-11"><b>QAA-11 : Verify that a user is successfully able to login into the B2C platform</b></a>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:41:45 PM</td>
+				<td class='step-details'>
+						Step 1 : Verify Login button displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:41:49 PM</td>
+				<td class='step-details'>
+						--Verified Login button displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:41:49 PM</td>
+				<td class='step-details'>
+						Step 3 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:42:03 PM</td>
+				<td class='step-details'>
+						Step 4 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:42:09 PM</td>
+				<td class='step-details'>
+						Step 5 : Enter email address : vested.automation+1@gmail.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:42:22 PM</td>
+				<td class='step-details'>
+						Step 6 : Enter Password : #TestUser12
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:42:28 PM</td>
+				<td class='step-details'>
+						Step 7 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:42:36 PM</td>
+				<td class='step-details'>
+						Step 8 : Enter Pin Code  : 111111
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:42:54 PM</td>
+				<td class='step-details'>
+						Step 9 : Verify home page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:42:59 PM</td>
+				<td class='step-details'>
+						--Verified home page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:42:59 PM</td>
+				<td class='step-details'>
+						Step 9 : Close application.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:43:08 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Screenshot of Test Pass</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_43_08_PKT_2022.jpg' src='Fri_Feb_11_17_43_08_PKT_2022.jpg' data-src='Fri_Feb_11_17_43_08_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:43:08 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>TEST CASE:- LOGIN_B2C_EMAIL PASSED</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>FundsTransfer</span>
+						<span class='test-time'>Feb 11, 2022 05:43:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 11, 2022 05:43:08 PM</span>
+	<span class='label end-time'>Feb 11, 2022 05:47:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 4m 23s+629ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:45:33 PM</td>
+				<td class='step-details'>
+						<a target="_blank" href="https://vestedfinance.atlassian.net/browse/QAA-57">QAA-57 : iOS - Verify that user is able to initiate fund transfer<a/>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:45:33 PM</td>
+				<td class='step-details'>
+						Step 1 : Verify Login button displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:45:36 PM</td>
+				<td class='step-details'>
+						--Verified Login button displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:45:36 PM</td>
+				<td class='step-details'>
+						Step 2 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:45:48 PM</td>
+				<td class='step-details'>
+						Step 3 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:45:54 PM</td>
+				<td class='step-details'>
+						Step 4 : Enter email address : vested.automation+1@gmail.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:46:08 PM</td>
+				<td class='step-details'>
+						Step 5 : Enter Password : #TestUser12
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:46:13 PM</td>
+				<td class='step-details'>
+						Step 6 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:46:22 PM</td>
+				<td class='step-details'>
+						Step 7 : Enter Pin Code  : 111111
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:46:37 PM</td>
+				<td class='step-details'>
+						Step 8 : Verify home page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:46:40 PM</td>
+				<td class='step-details'>
+						--Verified home page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:46:40 PM</td>
+				<td class='step-details'>
+						Step 8 : Click on Transfer Menu button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:46:48 PM</td>
+				<td class='step-details'>
+						Step 9 : Verify Transfer Page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:46:50 PM</td>
+				<td class='step-details'>
+						--Verified Transfer Page is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:46:50 PM</td>
+				<td class='step-details'>
+						Step 10 : Verify ADD FUNDS button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:46:59 PM</td>
+				<td class='step-details'>
+						--Verified ADD FUNDS button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:46:59 PM</td>
+				<td class='step-details'>
+						Step 11 : Click on ADD FUNDS button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:47:05 PM</td>
+				<td class='step-details'>
+						Step 12 : Verify ADD FUNDS popup is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:47:10 PM</td>
+				<td class='step-details'>
+						--Verified ADD FUNDS popup is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:47:10 PM</td>
+				<td class='step-details'>
+						Step 13 : Click on Back Button button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:47:11 PM</td>
+				<td class='step-details'>
+						Step 14 : Verify Withdraw Funds button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:47:17 PM</td>
+				<td class='step-details'>
+						--Verified Withdraw Funds button is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:47:17 PM</td>
+				<td class='step-details'>
+						Step 15 : Click on Withdraw Funds button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:47:22 PM</td>
+				<td class='step-details'>
+						Step 16 : Verify Withdraw Funds popup is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:47:30 PM</td>
+				<td class='step-details'>
+						--Verified Withdraw Funds popup is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:47:32 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Screenshot of Test Pass</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_47_32_PKT_2022.jpg' src='Fri_Feb_11_17_47_32_PKT_2022.jpg' data-src='Fri_Feb_11_17_47_32_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:47:32 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>TEST CASE:- FUNDSTRANSFER PASSED</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>SignUp_B2C_Email</span>
+						<span class='test-time'>Feb 11, 2022 05:47:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 11, 2022 05:47:32 PM</span>
+	<span class='label end-time'>Feb 11, 2022 05:52:05 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 4m 32s+998ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:47:32 PM</td>
+				<td class='step-details'>
+						<a target="_blank" href="https://vestedfinance.atlassian.net/browse/QAA-9"><b>QAA-9 : iOS - Verify a user is able to sign up to the platform with a valid email address and password</b></a>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:49:58 PM</td>
+				<td class='step-details'>
+						Step 1 : Verify Signup button displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:49:59 PM</td>
+				<td class='step-details'>
+						--Verified Signup button displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:49:59 PM</td>
+				<td class='step-details'>
+						Step 2 : Click on Sign up button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:17 PM</td>
+				<td class='step-details'>
+						Step 3 : Verify Signup with Email button displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:18 PM</td>
+				<td class='step-details'>
+						--Verified Signup with Email button displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:18 PM</td>
+				<td class='step-details'>
+						Step 4 : Click on Sign up With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:23 PM</td>
+				<td class='step-details'>
+						Step 5 : Enter email address : Test0211221750@codeautomation.ai
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:35 PM</td>
+				<td class='step-details'>
+						Step 6 : Enter Password : Pass5035#
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:43 PM</td>
+				<td class='step-details'>
+						Step 7 : Click on Sign Up button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:52 PM</td>
+				<td class='step-details'>
+						Step 8 : Verify Verification Code screen is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:50:57 PM</td>
+				<td class='step-details'>
+						--Verify Verification Code screen is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:50:57 PM</td>
+				<td class='step-details'>
+						Step 9 : Click on Back button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:10 PM</td>
+				<td class='step-details'>
+						Step 10 : Click on Back button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:19 PM</td>
+				<td class='step-details'>
+						Step 11 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:26 PM</td>
+				<td class='step-details'>
+						Step 12 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:32 PM</td>
+				<td class='step-details'>
+						Step 13 : Enter email address : Test0211221750@codeautomation.ai
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:44 PM</td>
+				<td class='step-details'>
+						Step 14 : Enter Password : Pass5035#
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:50 PM</td>
+				<td class='step-details'>
+						Step 15 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:51:57 PM</td>
+				<td class='step-details'>
+						Step 16 : Verify 'START KYC' button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:02 PM</td>
+				<td class='step-details'>
+						--Verified 'START KYC' button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:52:02 PM</td>
+				<td class='step-details'>
+						Step 17 : Verify 'EXPLORE PLATFORM' button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:03 PM</td>
+				<td class='step-details'>
+						--Verified 'EXPLORE PLATFORM' button is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:05 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Screenshot of Test Pass</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_52_05_PKT_2022.jpg' src='Fri_Feb_11_17_52_05_PKT_2022.jpg' data-src='Fri_Feb_11_17_52_05_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:52:05 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>TEST CASE:- SIGNUP_B2C_EMAIL PASSED</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>MonkeyTest_ClickAllTabs</span>
+						<span class='test-time'>Feb 11, 2022 05:52:06 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 11, 2022 05:52:06 PM</span>
+	<span class='label end-time'>Feb 11, 2022 05:58:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 6m 37s+830ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:54:32 PM</td>
+				<td class='step-details'>
+						<a target="_blank" href="https://vestedfinance.atlassian.net/browse/QAA-54">QAA-54 : iOS - Verify user is able to access all tabs on navigation menu after logging in<a/>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:54:32 PM</td>
+				<td class='step-details'>
+						Step 1 : Verify Login button displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:54:35 PM</td>
+				<td class='step-details'>
+						--Verified Login button displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:54:35 PM</td>
+				<td class='step-details'>
+						Step 2 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:54:49 PM</td>
+				<td class='step-details'>
+						Step 3 : Click on Login With Email button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:54:54 PM</td>
+				<td class='step-details'>
+						Step 4 : Enter email address : vested.automation+1@gmail.com
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:55:08 PM</td>
+				<td class='step-details'>
+						Step 5 : Enter Password : #TestUser12
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:55:14 PM</td>
+				<td class='step-details'>
+						Step 6 : Click on Login button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:55:22 PM</td>
+				<td class='step-details'>
+						Step 7 : Enter Pin Code  : 111111
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:55:40 PM</td>
+				<td class='step-details'>
+						Step 8 : Verify home page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:55:45 PM</td>
+				<td class='step-details'>
+						--Verified home page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:55:51 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Home Page Screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_55_51_PKT_2022.jpg' src='Fri_Feb_11_17_55_51_PKT_2022.jpg' data-src='Fri_Feb_11_17_55_51_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:55:51 PM</td>
+				<td class='step-details'>
+						Step 9 : Verify Browse button displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:55:58 PM</td>
+				<td class='step-details'>
+						--Verified Browse button displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:55:58 PM</td>
+				<td class='step-details'>
+						Step 10 : Click on Browse menu button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:06 PM</td>
+				<td class='step-details'>
+						Step 11 : Verify Browse Page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:13 PM</td>
+				<td class='step-details'>
+						--Verified Browse Page is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:20 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Browse Page Screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_56_20_PKT_2022.jpg' src='Fri_Feb_11_17_56_20_PKT_2022.jpg' data-src='Fri_Feb_11_17_56_20_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:20 PM</td>
+				<td class='step-details'>
+						Step 12 : Click on Transfer Menu button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:27 PM</td>
+				<td class='step-details'>
+						Step 13 : Verify Transfer Page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:31 PM</td>
+				<td class='step-details'>
+						--Verified Transfer Page is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:56:34 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Transfer Page Screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_56_34_PKT_2022.jpg' src='Fri_Feb_11_17_56_34_PKT_2022.jpg' data-src='Fri_Feb_11_17_56_34_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:34 PM</td>
+				<td class='step-details'>
+						Step 14 : Click on Direct Menu button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:56:44 PM</td>
+				<td class='step-details'>
+						Step 15 : Verify Direct Page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:28 PM</td>
+				<td class='step-details'>
+						--Verified Direct Page is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:31 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Direct Page Screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_58_31_PKT_2022.jpg' src='Fri_Feb_11_17_58_31_PKT_2022.jpg' data-src='Fri_Feb_11_17_58_31_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:58:31 PM</td>
+				<td class='step-details'>
+						Step 16 : Click on DIY Vest Menu button.
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>5:58:39 PM</td>
+				<td class='step-details'>
+						Step 17 : Verify DIY Vest Page is displaying.
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:40 PM</td>
+				<td class='step-details'>
+						--Verified DIY Vest Page is displaying
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:42 PM</td>
+				<td class='step-details'>
+						<b><font color=green>DIY Vest Page Screenshot</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_58_42_PKT_2022.jpg' src='Fri_Feb_11_17_58_42_PKT_2022.jpg' data-src='Fri_Feb_11_17_58_42_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:44 PM</td>
+				<td class='step-details'>
+						<b><font color=green>Screenshot of Test Pass</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Fri_Feb_11_17_58_44_PKT_2022.jpg' src='Fri_Feb_11_17_58_44_PKT_2022.jpg' data-src='Fri_Feb_11_17_58_44_PKT_2022.jpg'>
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:58:44 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'><b>TEST CASE:- MONKEYTEST_CLICKALLTABS PASSED</b></span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>6</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Feb 11, 2022 04:51:30 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Feb 11, 2022 05:58:46 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>1h 7m 16s+67ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>Automation Tester</td>
+								<td>Investor tester</td>
+							</tr>
+							<tr>
+								<td>Organization</td>
+								<td>CodeAutomation</td>
+							</tr>
+							<tr>
+								<td>Build no</td>
+								<td>1234</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 6,
+				passParent: 6,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "Login_AxisUser":199.637,"Login_B2B_Email":2669.685,"Login_B2C_Email":226.942,"FundsTransfer":263.629,"SignUp_B2C_Email":272.998,"MonkeyTest_ClickAllTabs":397.83
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>
