@@ -113,8 +113,8 @@ public class BaseClass extends Utilities{
 	
 	public static HashMap <String, Integer> methodNamelist = new HashMap<>();
 
-    public static String userName = "muhammadnawaz_gZDEMa";
-    public static String accessKey = "x6PmgD7Zc9QLoPqWezpq";
+    public static String userName = "username";
+    public static String accessKey = "accesskey";
     public static URL url;
     public static DesiredCapabilities capabilities;
     
@@ -124,7 +124,7 @@ public class BaseClass extends Utilities{
 	public static boolean runWithDashboard = true;
 	public static boolean runOnBrowserStack = true;
 
-	public static final String api_base_url = "http://182.180.172.81:8082/";
+	public static final String api_base_url = "API path";
 	public static final String deviceName = "iPhone 14 Pro";
 	public static final String BuildNumber = "5.48";
 	public static BrowserStackJob browserStackJob;
@@ -171,8 +171,8 @@ public class BaseClass extends Utilities{
 			    driver = new IOSDriver<MobileElement>(url, capabilities);
 			    printString("Running on Local Machine");
 
-			}else {							//Banking app Build "bs://2a2af34df9aee90ad4299311bedf9756ec60acde";
-				String app_url = PropertiesReader.getPropertyValue("app_build");///*Aug 12*/"bs://7fe66db9e46c95f27fbcc6779c3bce544cde1721";///*Aug 5*/"bs://55f86df2db562c773face0dfaa191bfecc0715eb";///*Aug 1*/"bs://149c75809ed8687e461261748f0f7f9f12b9d4fe";///*29 July*/"bs://bbcb91c5a8121c50611d6dbafb50333bf8ba83d9";// /*28 July*/"bs://15f609dc95cc8617e7b473ac156ba092e9f7b469";//"bs://44332b7997bf831678f8729324f765a070d11a41";//"bs://23c23e9c9a9ccc0b240a768fb1a294ca3d390614";//"bs://ae98428c55d76894076900236c259f30800db4f9";//"bs://4cf79d4ae39136a1e1c8f8240024f3df9041b93e";//"bs://a1e480b0d9eefbd8cc501adbf07aea30676b1530";//"bs://d58320e0f3d404aa2bc69b65f02889a5cd64bdb7";
+			}else {							
+				String app_url = PropertiesReader.getPropertyValue("app_build");
 				printString("Using Build: "+app_url);
 				DesiredCapabilities capabilities = new DesiredCapabilities();
 				capabilities.setCapability("os_version", "16");
